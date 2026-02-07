@@ -4,7 +4,7 @@ const noBtn = document.querySelector('#noBtn');
 const message = document.querySelector('#message');
 
 yesBtn.addEventListener('click', () => { // När man klickar på Yes-knappen
-  message.textContent = "YAY! ❤️ Your my Valentine!"; // Ändrar texten till ett positivt svar
+  message.textContent = "YAY! ❤️ You're my Valentine!"; // Ändrar texten till ett positivt svar
   startHearts(); // Startar funktionen som skapar flytande hjärtan
 });
 
