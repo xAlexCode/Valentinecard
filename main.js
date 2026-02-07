@@ -26,15 +26,14 @@ noBtn.addEventListener('click', (event) => {
 
 // Funktion som skapar flytande hjärtan på skärmen
 function startHearts() {
-  setInterval(() => {  // Skapar ett nytt hjärta var 300 ms
+  setInterval(() => { // Skapar ett nytt hjärta var 300 ms
     const heart = document.createElement('span'); // Skapar ett nytt span-element som representerar ett hjärta
 
     heart.classList.add('heart'); // Lägger till CSS-klassen för animation
-    heart.textContent = "❤️";// Själva hjärt-symbolen en kopierad emoji
-    heart.style.left = Math.random() * 100 + "vw";  // Slumpmässig horisontell position över hela skärmen
+    heart.textContent = "❤️"; // Själva hjärt-symbolen en kopierad emoji
+    heart.style.left = Math.random() * 100 + "vw"; // Slumpmässig horisontell position över hela skärmen
 
-    document.body.appendChild(heart);  // Lägger till hjärtat i dokumentet så det syns
+    document.body.appendChild(heart); // Lägger till hjärtat i dokumentet så det syns
 
-    setTimeout(() => heart.remove(), 3000);  // Tar bort hjärtat efter 3 sekunder så sidan inte fylls upp
-  }, 300);
+    setTimeout(() => heart.remove(), 3000);}, 300); // Tar bort hjärtat efter 3 sekunder så sidan inte fylls upp
 }
